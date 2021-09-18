@@ -2,7 +2,7 @@
 
 var readlinesync=require("readline-sync");
 const chalk = require('chalk');
-console.log(chalk.blue('Hello world'));
+// console.log(chalk.blue('Hello world'));
 
 
 
@@ -26,7 +26,7 @@ function play(question,answer){
 var userAnswer=readlinesync.question(question)
 
 if (userAnswer===answer){
-  console.log("You are right")
+  console.log(chalk.yellow("You are right"));
   score=score+1;
 }else{
   console.log("You are wrong");
