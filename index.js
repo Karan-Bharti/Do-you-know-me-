@@ -10,7 +10,7 @@ var score=0;
 
 var username=readlinesync.question("what is your name? ");
 
-console.log("welcome "+username +" to DO YOU KNOW KARAN ")
+console.log(chalk.blue("welcome "+username +" to DO YOU KNOW KARAN "))
 
 var highscore=[
   {
@@ -29,10 +29,10 @@ if (userAnswer===answer){
   console.log(chalk.yellow("You are right"));
   score=score+1;
 }else{
-  console.log("You are wrong");
+  console.log(chalk.red("You are wrong"));
   score=score;
 }
-console.log("current score is "+ score);
+console.log(chalk.red("current score is "+ score));
 console.log("--------")
 }
 var questions =[
